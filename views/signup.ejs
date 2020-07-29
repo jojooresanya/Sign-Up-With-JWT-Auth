@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="fhero">
+    <h1>App</h1>
+    <div class="form-area">
+      <ul class="flash__msgs">
+        <%- include('./partials/message.ejs') %>
+      </ul>
+      <form action="/user/signup" method="POST" id="signup-form">
+        <div class="inp">
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Enter Name" required value="<%= typeof name != 'undefined' ? name : '' %>">
+        </div>
+        <div class="inp">
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Enter Email" required value="<%= typeof email != 'undefined' ? email : '' %>">
+        </div>
+        <div class="inp">
+          <label for="password">password</label>
+          <input type="password" name="password" placeholder="Enter Password" required value="<%= typeof password != 'undefined' ? password : '' %>">
+        </div>
+        <div class="inp">
+          <label for="password2">Confirm Password</label>
+          <input type="password" name="password2" placeholder="Confirm Password" required value="<%= typeof password2 != 'undefined' ? password2 : '' %>">
+        </div>
+        <button class="submit">Sign up</button>
+      </form>
+    </div>
+    <p>Registered? <a href="/user/login" class="fa">Login</a></p>
+  </div>
+</div>
+
+<script src="/js/app.js"></script>

@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #1b1b9c;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+a,
+.submit {
+  text-decoration: none;
+  background-color: #1b1b9c;
+  color: #ffffff;
+  padding: 0.5em 2em;
+}
+
+button {
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.hero,
+.fhero {
+  border: 1px solid #c9c9c9;
+  padding: 2em;
+  box-shadow: 0px 2px 2px #c9c9c9;
+}
+
+.fhero {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.hero-h1 {
+  margin-bottom: 1em;
+}
+
+.form-area {
+  margin-bottom: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: initial;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.inp {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+}
+
+label {
+  margin-bottom: 0.5em;
+}
+
+input {
+  outline: none;
+  border: 1px solid #1b1b9c;
+  color: #1b1b9c;
+  padding: 0.7em;
+}
+
+.fa {
+  font-size: 0.8em;
+  margin-left: 1em;
+  padding: 0.5em 1.5em;
+  opacity: 0.8;
+}
+
+.flash__msgs {
+  width: 89%;
+  list-style: none;
+  /* margin: 0 auto; */
+}
+
+.flash__msg {
+  text-align: center;
+  font-size: .75em;
+  color: #ffffff;
+  display: flex;
+  padding-left: .5em;
+  margin: .5em 0;
+}
+
+.error {
+  background-color: #ca0505;
+  border: 1px solid #ca0505;
+}
+
+.success {
+  background-color: #08b456;
+  border: 1px solid #08b456;
+}
+
+.close {
+  font-size: 2em;
+  background: #ffffff;
+  align-self: center;
+  margin-left: auto;
+  padding: .19em;
+  cursor: pointer;
+}
+
+.close-error {
+  color: #ca0505;
+}
+
+.close-success {
+  color: #08b456;
+}

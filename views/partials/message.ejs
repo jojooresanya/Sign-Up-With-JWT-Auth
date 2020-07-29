@@ -1,0 +1,19 @@
+<% if (typeof errors != 'undefined') { %>
+<% errors.forEach(error => { %>
+<li class="error flash__msg">
+  <p><%= error.msg %></p><span class="close close-error">&times;</span>
+</li>
+<% }) %>
+<% } %>
+
+<% if (success_msg != '') { %>
+<li class="success flash__msg">
+  <p><%= success_msg %></p><span class="close close-success">&times;</span>
+</li>
+<% } %>
+
+<% if (error_msg != '') { %>
+<li class="error flash__msg">
+  <p><%= error_msg %></p><span class="close close-error">&times;</span>
+</li>
+<% } %>
